@@ -1,0 +1,26 @@
+READ ME:
+Adam Bouters
+3/11/16
+
+
+Created a set of tables in mysql based off of the schema provided. PHP version 5.5.9 connects with the mysql version
+5.5.47 database through Apache version 2.4.7 as can be referenced in the provided artifacts: info-php.pdf, Mysqli_Config_artfact.txt.
+
+Starting with the PHP I assumed three tables exists, which I replicated on my own LAMP server. First I connect to the
+database and have a fail save in case a connection can't be made. I approached it by first searching through the 3 tables,
+one at a time to match the keyword given to a possible entry in the table. Starting with table 1 (Eateries) I scan for the
+keyword given, and if found enters the if statement. From this position I know I can use the foreign keys 'Type' and 'Owner'
+to correlate to table 2 (Eatery Type) and table 3 (Eatery Owners). I query the foreign key to the primary key and have the
+information needed to complete the form.
+
+Table 2 and Table 3 are done in similar ways. I search through the tables identifying the keyword, and when found I enter
+the scope of the table. From there I match it corresponding primary key ID to the appropriate foreign key of table 1. With
+Table 1 I can correctly point to the desired table I do not have already. With all three tables known I can complete the information
+needed in the form.
+
+Assumption: The requirements wanted all the information given, regardless of what was quired. In the example given a request for
+the keyword 'Restaurant' was given but not displayed in the form. I made the assumption and change that it should be shown and have
+displayed it right after the Eatery Name, such as "Joels Steakhouse: Restaurant".
+
+I was able to validate the results with what was given in the example from the given searches. Provided web artifacts of example
+runs are provided with "Example_*.jpg"
