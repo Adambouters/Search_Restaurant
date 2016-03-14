@@ -2,6 +2,7 @@ READ ME:
 Adam Bouters
 3/11/16
 
+Finsished code can be run at http://104.131.61.212/Search.php
 
 Created a set of tables in mysql based off of the schema provided. PHP version 5.5.9 connects with the mysql version
 5.5.47 database through Apache version 2.4.7 as can be referenced in the provided artifacts: info-php.pdf, Mysqli_Config_artfact.txt.
@@ -24,3 +25,5 @@ displayed it right after the Eatery Name, such as "Joels Steakhouse: Restaurant"
 
 I was able to validate the results with what was given in the example from the given searches. Provided web artifacts of example
 runs are provided with "Example_*.jpg"
+
+
