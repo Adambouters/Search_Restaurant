@@ -22,7 +22,7 @@ function search($param)
 {
 $servername="localhost";
 $username="root";
-$pass="marines123";
+$pass="";
 $database="demo";
   $con = new mysqli($servername, $username, $pass, $database);
   if($con->connect_error || mysqli_connect_error())
